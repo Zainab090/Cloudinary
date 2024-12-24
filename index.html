@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Uploader</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Image Uploader</h1>
+
+  <div class="upload-container">
+    <form id="upload-form">
+      <label for="file-input">Choose an image</label>
+      <input type="file" id="file-input" accept="image/*">
+      <span id="file-name">No file chosen</span>
+      <button type="submit" id="upload-button">Upload</button>
+      <div class="progress-bar" id="upload-progress">
+        <div class="progress"></div>
+      </div>
+    </form>
+  </div>
+
+  <div class="gallery" id="gallery"></div>
+
+
+  <script src="https://upload-widget.cloudinary.com/latest/global/all.js" type="text/javascript"></script>  
+  <script src="script.js"></script>
+</body>
+</html>
